@@ -1,3 +1,9 @@
+import ProductDetail from "@/components/site/product/ProductDetail";
+
 export default function Page() {
-    return <div>Trang chi tiet san pham</div>;
+    return (
+        <div>
+            <ProductDetail />
+        </div>
+    );
 }

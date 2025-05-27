@@ -45,7 +45,7 @@ export default function Header() {
                             </Link>
                         </li>
                         <li>
-                            <Link className="min-w-max mx-1" href="/shop">
+                            <Link className="min-w-max mx-1" href="/site/products">
                                 Shop
                             </Link>
                         </li>
