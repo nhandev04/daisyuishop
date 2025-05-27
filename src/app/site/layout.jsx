@@ -1,3 +1,10 @@
+import Header from "@/components/site/layout/Header";
+
 export default function Layout({ children }) {
-    return <div>{children}</div>;
+    return (
+        <div>
+            <Header />
+            {children}
+        </div>
+    );
 }
