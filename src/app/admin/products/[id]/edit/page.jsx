@@ -1,3 +1,8 @@
 export default function EditProduct() {
-    return <div># Chỉnh sửa sản phẩm</div>;
+    return (
+        <div className="p-4">
+            <h2 className="text-2xl font-bold mb-4">Edit Product</h2>
+            <p>This is Edit Product Component</p>
+        </div>
+    );
 }
