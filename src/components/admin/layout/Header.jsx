@@ -100,7 +100,7 @@ export default function Header() {
                                     <Link href="/settings">Settings</Link>
                                 </li>
                                 <li>
-                                    <Link href="/logout">Logout</Link>
+                                    <Link href="/admin/auth/login">Logout</Link>
                                 </li>
                             </ul>
                         </div>
