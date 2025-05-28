@@ -1,26 +1,27 @@
 "use client";
 
+import { FaEye } from "react-icons/fa";
 import ProductItem from "./ProductItem";
 
 const mockProducts = [
-    { id: "P001", name: "Sản phẩm 1", price: 100000, status: "Còn hàng" },
-    { id: "P002", name: "Sản phẩm 2", price: 200000, status: "Hết hàng" },
-    { id: "P003", name: "Sản phẩm 3", price: 150000, status: "Còn hàng" },
+    { id: "P001", name: "Sản phẩm 1", price: 100000, status: <FaEye /> },
+    { id: "P002", name: "Sản phẩm 2", price: 200000, status: <FaEye /> },
+    { id: "P003", name: "Sản phẩm 3", price: 150000, status: <FaEye /> },
 ];
 
 // ProductTable component
 export default function ProductTable() {
     return (
-        <div className="overflow-x-auto bg-white rounded shadow">
-            <table className="min-w-full border-collapse">
+        <div className="overflow-x-auto rounded">
+            <table className="min-w-full border-none">
                 <thead>
-                    <tr className="bg-gray-100">
-                        <th className="px-4 py-2 border">STT</th>
-                        <th className="px-4 py-2 border">ID</th>
-                        <th className="px-4 py-2 border">Tên Sản Phẩm</th>
-                        <th className="px-4 py-2 border">Giá</th>
-                        <th className="px-4 py-2 border">Tình Trạng</th>
-                        <th className="px-4 py-2 border">Hành Động</th>
+                    <tr className="bg-white border-none">
+                        <th className="px-4 py-2 text-left">STT</th>
+                        <th className="px-4 py-2 text-left">ID</th>
+                        <th className="px-4 py-2 text-left">Name</th>
+                        <th className="px-4 py-2 text-left">Price</th>
+                        <th className="px-4 py-2 text-left">Status</th>
+                        {/* <th className="px-4 py-2 border">Hành Động</th> */}
                     </tr>
                 </thead>
                 <tbody>
@@ -40,16 +41,13 @@ export default function ProductTable() {
             </table>
             <div className="p-4 w-full flex justify-center">
                 <div className="join">
-                    <input
-                        className="join-item btn btn-square"
-                        type="radio"
-                        name="options"
-                        aria-label="1"
-                        defaultChecked
-                    />
-                    <input className="join-item btn btn-square" type="radio" name="options" aria-label="2" />
-                    <input className="join-item btn btn-square" type="radio" name="options" aria-label="3" />
-                    <input className="join-item btn btn-square" type="radio" name="options" aria-label="4" />
+                    <button className="join-item btn">«</button>
+                    <button className="join-item btn">1</button>
+                    <button className="join-item btn">2</button>
+                    <button className="join-item btn">Page 3</button>
+                    <button className="join-item btn">4</button>
+                    <button className="join-item btn">5</button>
+                    <button className="join-item btn">»</button>
                 </div>
             </div>
         </div>
